@@ -1,0 +1,32 @@
+syntax = "proto3";
+
+package geometry;
+
+service GeometryService {
+  rpc Persegi (SquareRequest) returns (AreaResponse);
+  rpc PersegiPanjang (RectangleRequest) returns (AreaResponse);
+  rpc Segitiga (TriangleRequest) returns (AreaResponse);
+  rpc Lingkaran (CircleRequest) returns (AreaResponse);
+}
+
+message SquareRequest {
+  double sisi = 1;
+}
+
+message RectangleRequest {
+  double panjang = 1;
+  double lebar = 2;
+}
+
+message TriangleRequest {
+  double alas = 1;
+  double tinggi = 2;
+}
+
+message CircleRequest {
+  double radius = 1;
+}
+
+message AreaResponse {
+  double area = 1;
+}

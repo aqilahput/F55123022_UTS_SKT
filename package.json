@@ -1,0 +1,19 @@
+{
+  "name": "uts_f55123022_aqilah-nur-aisyah-putri",
+  "version": "1.0.0",
+  "description": "UTS - Server gRPC dan API Express untuk menghitung luas bangun datar",
+  "main": "grpc_server.js",
+  "scripts": {
+    "start:grpc": "node grpc_server.js",
+    "start:api": "node api_server.js"
+  },
+  "keywords": ["grpc", "express", "geometry", "uts"],
+  "author": "Aqilah Nur Aisyah Putri",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "@grpc/grpc-js": "^1.14.0",
+    "@grpc/proto-loader": "^0.8.0",
+    "express": "^5.1.0"
+  }
+}
